@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="main">
+        <div id="sidebar">
+            <div class="logo">
+                <h2><i class="ri-music-fill"></i> Galaxy Music</h2>
+            </div>
+            <div class="menu">
+                <div class="menu-item active">
+                    <i class="ri-home-fill"></i>
+                    <span>Home</span>
+                </div>
+                <div class="menu-item">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                </div>
+                <div class="menu-item">
+                    <i class="ri-playlist-fill"></i>
+                    <span>Your Library</span>
+                </div>
+            </div>
+            <div class="playlist-section">
+                <h3>PLAYLISTS</h3>
+                <div class="playlist-item">
+                    <i class="ri-play-list-fill"></i>
+                    <span>My Playlist #1</span>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="player-view">
+                <img id="current-song-image" src="./images/default.png" alt="Song Cover">
+                <div class="music-wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="song-info">
+                    <h2 id="current-song-name">Select a song to play</h2>
+                    <p id="current-time">0:00 / 0:00</p>
+                </div>
+            </div>
+            <div id="songs-list">
+                <div class="header">
+                    <h3>All Songs</h3>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search songs...">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+                <div id="all-songs"></div>
+            </div>
+        </div>
+    </div>
+    <div id="player">
+        <div class="controls">
+            <h3 id="back"><i class="ri-skip-back-fill"></i></h3>
+            <h3 id="play"><i class="ri-play-fill"></i></h3>
+            <h3 id="forward"><i class="ri-skip-forward-fill"></i></h3>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
